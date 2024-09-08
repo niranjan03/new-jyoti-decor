@@ -1,0 +1,32 @@
+.whatsapp-container {
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+    z-index: 1000;
+  }
+
+  .btn-floating {
+    width: 75px;
+    height: 75px;
+    border-radius: 50% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+  }
+
+  @media (max-width: 768px) {
+    .whatsapp-container {
+      bottom: 10px;
+      left: 10px;
+    }
+
+    .btn-floating {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .whatsapp-container i{
+    font-size: 60px;
+    
+  }
