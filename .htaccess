@@ -1,0 +1,10 @@
+RewriteEngine on
+
+Redirect 301 / https://newjyotidecor.com/
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^newjyotidecor.com$ [OR]
+    RewriteCond %{HTTP_HOST} ^www.newjyotidecor.com$
+    RewriteRule (.*)$ https://newjyotidecor.com//$1 [R=301,L]
+  </IfModule>
